@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OpcUaSource FileVersion="7" ArVersion="C4.72">
+  <Aliases>
+    <ACLAliases />
+    <EURangeViolationAliases />
+    <EURangesAliases />
+    <EngineeringUnitAliases />
+  </Aliases>
+  <DefaultView>
+    <Module Name="&lt;Default&gt;">
+      <Task Name="Server_t">
+        <Variable Name="abb_control">
+          <Variable Name="Joint">
+            <Variable Name="Read">
+              <Variable Name="J1" />
+              <Variable Name="J2" />
+              <Variable Name="J3" />
+              <Variable Name="J4" />
+              <Variable Name="J5" />
+              <Variable Name="J6" />
+            </Variable>
+            <Variable Name="Write">
+              <Variable Name="J1" />
+              <Variable Name="J2" />
+              <Variable Name="J3" />
+              <Variable Name="J4" />
+              <Variable Name="J5" />
+              <Variable Name="J6" />
+            </Variable>
+          </Variable>
+          <Variable Name="Cartesian">
+            <Variable Name="Read">
+              <Variable Name="X" />
+              <Variable Name="Y" />
+              <Variable Name="Z" />
+              <Variable Name="RX" />
+              <Variable Name="RY" />
+              <Variable Name="RZ" />
+            </Variable>
+            <Variable Name="Write">
+              <Variable Name="X" />
+              <Variable Name="Y" />
+              <Variable Name="Z" />
+              <Variable Name="RX" />
+              <Variable Name="RY" />
+              <Variable Name="RZ" />
+            </Variable>
+          </Variable>
+          <Variable Name="Command">
+            <Variable Name="joint">
+              <Variable Name="start" />
+              <Variable Name="stop" />
+              <Variable Name="default_parameters" />
+              <Variable Name="is_started" />
+              <Variable Name="start_read_data" />
+              <Variable Name="stop_read_data" />
+              <Variable Name="is_read" />
+            </Variable>
+            <Variable Name="cartesian">
+              <Variable Name="start" />
+              <Variable Name="stop" />
+              <Variable Name="default_parameters" />
+              <Variable Name="is_started" />
+              <Variable Name="start_read_data" />
+              <Variable Name="stop_read_data" />
+              <Variable Name="is_read" />
+            </Variable>
+          </Variable>
+        </Variable>
+      </Task>
+    </Module>
+  </DefaultView>
+</OpcUaSource>
