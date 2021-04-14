@@ -21,6 +21,10 @@ EGMSensor needs to be defined under Configuration Editor - Communication - Trans
 Name	Type	Serial Port	Remote Adress	Remote port number
 EGMSensor	UDPUC	N/A	Computers IP	6510
 
+<p align="center">
+  <img src="https://github.com/rparak/ABB_BaR_EGM_Control/blob/main/images/egm_diagram.png" width="800" height="450">
+</p>
+
 ## Project Hierarchy:
 
 **Repositary [/ABB_BaR_EGM_Control/]:**
@@ -31,9 +35,6 @@ EGMSensor	UDPUC	N/A	Computers IP	6510
 
 ## Application:
 
-<p align="center">
-  <img src="https://github.com/rparak/ABB-RobotStudo-Tutorial-SortingMachine/blob/main/images/2_1.png" width="800" height="450">
-</p>
 
 ## Result:
 
