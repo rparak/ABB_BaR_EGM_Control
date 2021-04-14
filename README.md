@@ -1,1 +1,1 @@
-# ABB_BaR_EGM_Control
+# Control of the ABB robot through B&R Automation PLC - EGM (Externally Guided Motion)
