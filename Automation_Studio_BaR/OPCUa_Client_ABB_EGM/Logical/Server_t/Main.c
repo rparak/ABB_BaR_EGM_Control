@@ -109,7 +109,7 @@ void _CYCLIC ProgramCyclic(void)
 		abb_control.Command.joint.is_started      = 1;
 		abb_control.Command.cartesian.is_started  = 0;
 	}else if(abb_control.Command.joint.stop == 1){
-		abb_control.Command.joint.is_started  = 0;
+		abb_control.Command.joint.is_started = 0;
 	}
 	// -------------------- START READ {JOINT} -------------------- //
 	if(abb_control.Command.joint.start_read_data == 1){
@@ -123,7 +123,7 @@ void _CYCLIC ProgramCyclic(void)
 		abb_control.Command.cartesian.is_started  = 1;
 		abb_control.Command.joint.is_started      = 0;
 	}else if(abb_control.Command.cartesian.stop == 1){
-		abb_control.Command.cartesian.is_started  = 0;
+		abb_control.Command.cartesian.is_started = 0;
 	}
 	// -------------------- START READ {CARTESIAN} -------------------- //
 	if(abb_control.Command.cartesian.start_read_data == 1){

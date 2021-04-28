@@ -28,7 +28,7 @@ ABB_BaR_EGM_Control/C_Sharp_App/EGM_OPCUa_ABB_BR_Client/EGM_OPCUa_ABB_BR_Client/
 EGM communication must be defined in: Configuration Editor/Communication/Transmission Protocol 
 
 <p align="center">
-  <img src="https://github.com/rparak/ABB_BaR_EGM_Control/blob/main/images/egm_config.png" width="800" height="450">
+  <img src="https://github.com/rparak/ABB_BaR_EGM_Control/blob/main/images/egm_config.png" width="800" height="400">
 </p>
 
 Example of a simple data processing application (OPC UA):
@@ -44,7 +44,7 @@ Example of a simple data processing application (Robot Web Services):
 Simulation Address
 PLC_ADDRESS = localhost or 127.0.0.1
 
-http://PLC_ADDRESS:81/index.html?visuId=acp_trak_dt
+http://PLC_ADDRESS:81/index.html?visuId=abb_move
 ```
 
 The project was realized at Institute of Automation and Computer Science, Brno University of Technology, Faculty of Mechanical Engineering (NETME Centre - Cybernetics and Robotics Division).
@@ -64,6 +64,10 @@ The project was realized at Institute of Automation and Computer Science, Brno U
 ## Application:
 
 ## ABB RobotStudio:
+
+<p align="center">
+  <img src="https://github.com/rparak/ABB_BaR_EGM_Control/blob/main/images/abb_app.PNG" width="800" height="450">
+</p>
 
 ## HMI (Human-Machine Interface) - MappView:
 
