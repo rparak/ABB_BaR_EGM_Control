@@ -28,7 +28,7 @@ ABB_BaR_EGM_Control/C_Sharp_App/EGM_OPCUa_ABB_BR_Client/EGM_OPCUa_ABB_BR_Client/
 EGM communication must be defined in: Configuration Editor/Communication/Transmission Protocol 
 
 <p align="center">
-  <img src="https://github.com/rparak/ABB_BaR_EGM_Control/blob/main/images/egm_config.png" width="600" height="350">
+  <img src="https://github.com/rparak/ABB_BaR_EGM_Control/blob/main/images/egm_config.png" width="800" height="450">
 </p>
 
 Example of a simple data processing application (OPC UA):
