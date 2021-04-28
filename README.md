@@ -39,12 +39,6 @@ PLC_ADDRESS = localhost or 127.0.0.1
 http://PLC_ADDRESS:81/index.html?visuId=abb_move
 ```
 
-The project was realized at Institute of Automation and Computer Science, Brno University of Technology, Faculty of Mechanical Engineering (NETME Centre - Cybernetics and Robotics Division).
-
-<p align="center">
-  <img src="https://github.com/rparak/ABB_BaR_EGM_Control/blob/main/images/egm_diagram.png" width="800" height="450">
-</p>
-
 **Appendix:**
 
 Example of a simple data processing application (OPC UA):
@@ -54,6 +48,13 @@ Example of a simple data processing application (OPC UA):
 Example of a simple data processing application (Robot Web Services):
 
 [ABB Robot - Data Processing](https://github.com/rparak/ABB_Robot_data_processing/)
+
+
+The project was realized at Institute of Automation and Computer Science, Brno University of Technology, Faculty of Mechanical Engineering (NETME Centre - Cybernetics and Robotics Division).
+
+<p align="center">
+  <img src="https://github.com/rparak/ABB_BaR_EGM_Control/blob/main/images/egm_diagram.png" width="800" height="450">
+</p>
 
 ## Project Hierarchy:
 
