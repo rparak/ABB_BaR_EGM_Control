@@ -31,14 +31,6 @@ EGM communication must be defined in: Configuration Editor/Communication/Transmi
   <img src="https://github.com/rparak/ABB_BaR_EGM_Control/blob/main/images/egm_config.png" width="800" height="400">
 </p>
 
-Example of a simple data processing application (OPC UA):
-
-[OPC UA B&R Automation - Data Processing](https://github.com/rparak/OPCUA_Simple)
-
-Example of a simple data processing application (Robot Web Services):
-
-[ABB Robot - Data Processing](https://github.com/rparak/ABB_Robot_data_processing/)
-
 **MappView (HMI):**
 ```bash
 Simulation Address
@@ -52,6 +44,16 @@ The project was realized at Institute of Automation and Computer Science, Brno U
 <p align="center">
   <img src="https://github.com/rparak/ABB_BaR_EGM_Control/blob/main/images/egm_diagram.png" width="800" height="450">
 </p>
+
+**Appendix:**
+
+Example of a simple data processing application (OPC UA):
+
+[OPC UA B&R Automation - Data Processing](https://github.com/rparak/OPCUA_Simple)
+
+Example of a simple data processing application (Robot Web Services):
+
+[ABB Robot - Data Processing](https://github.com/rparak/ABB_Robot_data_processing/)
 
 ## Project Hierarchy:
 
