@@ -4,11 +4,13 @@
 
 **Software:**
 ```bash
-ABB RobotStudio
+ABB RobotStudio, B&R Automation Studio
 ```
 ABB RS: https://new.abb.com/products/robotics/robotstudio/downloads
 
 ABB EGB: https://new.abb.com/products/3HAC054376-001/ext-guided-motion-egm
+
+B&R Automation: https://www.br-automation.com/en/downloads/#categories=Software-1344987434933
 
 ## Project Description:
 
