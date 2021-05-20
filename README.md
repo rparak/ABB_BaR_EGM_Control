@@ -31,6 +31,9 @@ EGM communication must be defined in: Configuration Editor/Communication/Transmi
   <img src="https://github.com/rparak/ABB_BaR_EGM_Control/blob/main/images/egm_config.png" width="800" height="400">
 </p>
 
+**Unpacking a station:**
+1. On the File tab, click Open and then browse to the folder and select the Pack&Go file, the Unpack & Work wizard opens.
+
 **MappView (HMI):**
 ```bash
 Simulation Address
