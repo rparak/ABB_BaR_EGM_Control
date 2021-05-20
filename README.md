@@ -60,7 +60,17 @@ Example of a simple data processing application (Robot Web Services):
 **Repositary [/ABB_BaR_EGM_Control/]:**
 
 ```bash
-[] /.../
+/C_Sharp_App/EGM_OPCUa_ABB_BR_Client/EGM_OPCUa_ABB_BR_Client/ -> C# Application
+[ Main Program (EGM, OPCUA Client, etc. ] Program.cs
+[ EGM (Externally Guided Motion) Lib.   ] Egm.cs
+
+ABB RobotStudio Project
+[ RobotStudio Data Format File ] /RSPAG_File/
+[ Rapid Program                ] /Rapid/T_ROB1/
+
+/Automation_Studio_BaR/OPCUa_Client_ABB_EGM/ -> Automatio Studio B&R Project
+[ Main Program (control of the main state machine) ] /Logical/Server_t/Main.c
+[ MappView Visualization                           ] /Logical/mappView/
 ```
 
 ## Application:
