@@ -31,7 +31,7 @@ EGM communication must be defined in: Configuration Editor/Communication/Transmi
   <img src="https://github.com/rparak/ABB_BaR_EGM_Control/blob/main/images/egm_config.png" width="800" height="400">
 </p>
 
-**Unpacking a station:**
+**Unpacking a station (/RSPAG_File/ABB_EGM_BR_UA.rspag):**
 1. On the File tab, click Open and then browse to the folder and select the Pack&Go file, the Unpack & Work wizard opens.
 2. In the Welcome to the Unpack & Work Wizard page, click Next.
 3. In the Select package page, click Browse and then select the Pack & Go file to unpack and the Target folder. Click Next.
