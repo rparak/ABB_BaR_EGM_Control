@@ -107,35 +107,28 @@ namespace EGM_OPCUa_ABB_BR_Client
         static void Main(string[] args)
         {
             // ------------------------ Initialization { Console app. Write } ------------------------//
-            Console.WriteLine("===============================================================================");
-            Console.WriteLine("===================== Externally Guided Motion (EGM) ==========================");
-            Console.WriteLine("================ OPCUa Communication {B&R Auotmation PLC} =====================");
-            Console.WriteLine("===============================================================================");
-            Console.WriteLine("\n");
-            Console.WriteLine("Autor: Roman Parak");
-            Console.WriteLine("\n");
+            Console.WriteLine("[INFO] Externally Guided Motion (EGM)");
+            Console.WriteLine("[INFO] OPCUa Communication {B&R Auotmation PLC}");
+            Console.WriteLine("[INFO] Autor: Roman Parak");
             // ------------------------ Initialization { OPCUa Config.} ------------------------//
             // PLC IP Address
             string ip_adr_plc = "127.0.0.1";
             // PLC Port
             string port_adr_plc = "4840";
             // Write IP, PORT {PLC}
-            Console.WriteLine("B&R Automation (PLC: IP Address - {0}, Port - {1})", ip_adr_plc, port_adr_plc);
+            Console.WriteLine("[INFO] B&R Automation (PLC: IP Address - {0}, Port - {1})", ip_adr_plc, port_adr_plc);
 
             // ------------------------ Initialization { EGM Config.} ------------------------//
             // Robot Port
             int port_adr_robot = 6511;
             // Write PORT {ABB ROBOT}
-            Console.WriteLine("ABB Robotics (Industrial Robot: Port - {0})", port_adr_robot);
+            Console.WriteLine("[INFO] ABB Robotics (Industrial Robot: Port - {0})", port_adr_robot);
 
             // ------------------------ Main Block { Control of the PLC (B&R) } ------------------------//
             try
             {
                 // ------------------------ Communication in progress ------------------------//
-                Console.WriteLine("\n");
-                Console.WriteLine("===============================================================================");
-                Console.WriteLine("========================= Communication in progress ===========================");
-                Console.WriteLine("===============================================================================");
+                Console.WriteLine("[INFO] Communication in progress.");
 
                 // Program name {Task}
                 program_name = "Server_t";
@@ -177,7 +170,7 @@ namespace EGM_OPCUa_ABB_BR_Client
                 // -------------------- Main Cycle {While} -------------------- //
                 while (true)
                 {
-                    Console.WriteLine("Connect to RobotStudio ABB EGM (y/n):");
+                    Console.WriteLine("[INFO] Connect to RobotStudio ABB EGM (y/n):");
                     // Connect sdk - var
                     string connect_sdk = Convert.ToString(Console.ReadLine());
 
@@ -204,7 +197,7 @@ namespace EGM_OPCUa_ABB_BR_Client
                         egm_client_rw.IsBackground = true;
                         egm_client_rw.Start();
 
-                        Console.WriteLine("Stop RobotStudio EGM ABB (y):");
+                        Console.WriteLine("[INFO] Stop RobotStudio EGM ABB (y):");
                         // Stop sdk - var
                         string stop_rs = Convert.ToString(Console.ReadLine());
 
@@ -305,17 +298,7 @@ namespace EGM_OPCUa_ABB_BR_Client
                         node_read_egm_j5 = abb_robot.FeedBack.Joints.GetJoints(4).ToString();
                         node_read_egm_j6 = abb_robot.FeedBack.Joints.GetJoints(5).ToString();
                     }
-                    else
-                    {
-                        node_read_egm_j1 = "0";
-                        node_read_egm_j2 = "0";
-                        node_read_egm_j3 = "0";
-                        node_read_egm_j4 = "0";
-                        node_read_egm_j5 = "0";
-                        node_read_egm_j6 = "0";
-                    }
-
-                    if (read_start_r_cartesian == true)
+                    else if (read_start_r_cartesian == true)
                     {
                         // Read Cartesian Position
                         // TCP Position {X, Y, Z}
@@ -327,25 +310,15 @@ namespace EGM_OPCUa_ABB_BR_Client
                         node_read_egm_c_ry = abb_robot.FeedBack.Cartesian.Euler.Y.ToString();
                         node_read_egm_c_rz = abb_robot.FeedBack.Cartesian.Euler.Z.ToString();
                     }
-                    else
-                    {
-                        node_read_egm_c_x = "0";
-                        node_read_egm_c_y = "0";
-                        node_read_egm_c_z = "0";
-
-                        node_read_egm_c_rx = "0";
-                        node_read_egm_c_ry = "0";
-                        node_read_egm_c_rz = "0";
-                    }
-
-                    // Create a new EGM sensor message
-                    EgmSensor.Builder egm_sensor = EgmSensor.CreateBuilder();
-                    // Function
-                    EMG_sensor_message(egm_sensor);
 
                     // OPCUa read data {Start - Joint/Cartesian move}
                     if (read_start_joint == true || read_start_cartesian == true)
                     {
+                        // Create a new EGM sensor message
+                        EgmSensor.Builder egm_sensor = EgmSensor.CreateBuilder();
+                        // Function
+                        EMG_sensor_message(egm_sensor);
+
                         using (MemoryStream memory_stream = new MemoryStream())
                         {
                             // Sensor Message
