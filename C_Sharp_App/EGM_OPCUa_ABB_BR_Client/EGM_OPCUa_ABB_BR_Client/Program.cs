@@ -109,7 +109,7 @@ namespace EGM_OPCUa_ABB_BR_Client
             // ------------------------ Initialization { Console app. Write } ------------------------//
             Console.WriteLine("[INFO] Externally Guided Motion (EGM)");
             Console.WriteLine("[INFO] OPCUa Communication {B&R Auotmation PLC}");
-            Console.WriteLine("[INFO] Autor: Roman Parak");
+            Console.WriteLine("[INFO] Author: Roman Parak");
             // ------------------------ Initialization { OPCUa Config.} ------------------------//
             // PLC IP Address
             string ip_adr_plc = "127.0.0.1";
