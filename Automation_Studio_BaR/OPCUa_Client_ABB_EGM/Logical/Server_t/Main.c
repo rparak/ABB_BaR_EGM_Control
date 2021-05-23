@@ -84,13 +84,13 @@ void _INIT ProgramInit(void)
 /**
  * Program Cyclic 
  * 
- * Duration (Cycle Time): 10000 [µs] 
- * Tolerance            : 10000 [µs]
+ * Duration (Cycle Time): 10000 [Âµs] 
+ * Tolerance            : 10000 [Âµs]
  */
 void _CYCLIC ProgramCyclic(void)
 {
 	/**
-	 START CONTROL {JOINT}
+	 * START CONTROL {JOINT}
 	 */
 	if(abb_control.Command.joint.start == 1){
 		abb_control.Command.joint.is_started      = 1;
@@ -100,8 +100,8 @@ void _CYCLIC ProgramCyclic(void)
 	}
 	
 	/**
-	START READ {JOINT}
-	*/
+	 * START READ {JOINT}
+	 */
 	if(abb_control.Command.joint.start_read_data == 1){
 		abb_control.Command.joint.is_read  = 1;
 	}else if(abb_control.Command.joint.stop_read_data == 1){
@@ -109,8 +109,8 @@ void _CYCLIC ProgramCyclic(void)
 	}
 	
 	/**
-	START CONTROL {CARTESIAN}
-	*/
+	 * START CONTROL {CARTESIAN}
+	 */
 	if(abb_control.Command.cartesian.start == 1){
 		abb_control.Command.cartesian.is_started  = 1;
 		abb_control.Command.joint.is_started      = 0;
@@ -119,8 +119,8 @@ void _CYCLIC ProgramCyclic(void)
 	}
 
 	/**
-	START READ {CARTESIAN}
-	*/
+	 * START READ {CARTESIAN}
+	 */
 	if(abb_control.Command.cartesian.start_read_data == 1){
 		abb_control.Command.cartesian.is_read  = 1;
 	}else if(abb_control.Command.cartesian.stop_read_data == 1){
@@ -128,8 +128,8 @@ void _CYCLIC ProgramCyclic(void)
 	}
 	
 	/**
-	DEFAULT PARAM. {JOINT}
-	*/
+	 * DEFAULT PARAM. {JOINT}
+	 */
 	if(abb_control.Command.joint.default_parameters == 1){
 		abb_control.Joint.Write.J1 = 0;
 		abb_control.Joint.Write.J2 = 0;
@@ -140,8 +140,8 @@ void _CYCLIC ProgramCyclic(void)
 	}
 	
 	/**
-	DEFAULT PARAM. {CARTESIAN}
-	*/
+	 * DEFAULT PARAM. {CARTESIAN}
+	 */
 	if(abb_control.Command.cartesian.default_parameters == 1){
 		abb_control.Cartesian.Write.X = 302;
 		abb_control.Cartesian.Write.Y = 0;
