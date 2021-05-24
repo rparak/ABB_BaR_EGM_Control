@@ -14,6 +14,8 @@ B&R Automation: https://www.br-automation.com/en/downloads/#categories=Software-
 
 The project is focused on a simple demonstration of client / server communication via OPC UA, which is implemented in C# Console App. (Server - B&R Automation PLC, Client - C# Console App). The console application communicates with the ABB robot via UDP (User Datagram Protocol) and controls the robot throught EGM (Externally Guided Motion). The application uses performance optimization using multi-threaded programming.
 
+[Application Manual](https://github.com/rparak/ABB_BaR_EGM_Control/tree/main/Documentation)
+
 **Notes:**
 
 EGM (Externally Guided Motion) is an interface for ABB robots that allows smoothless control of the robotic arm from an external application (in our case it is a C# Console Application). EGM can be used to stream positions to the robot controller either in the Joint / Cartesian space. 
