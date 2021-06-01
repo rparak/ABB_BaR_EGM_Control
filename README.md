@@ -70,7 +70,7 @@ Example of a simple data processing application (Robot Web Services):
 **Repositary [/ABB_BaR_EGM_Control/]:**
 
 ```bash
-/C_Sharp_App/EGM_OPCUa_ABB_BR_Client/EGM_OPCUa_ABB_BR_Client/ -> C# Application
+/C_Sharp_App/EGM_OPCUa_ABB_BR_Client/ -> C# Application
 [ Main Program (EGM, OPCUA Client, etc. ] Program.cs
 [ EGM (Externally Guided Motion) Lib.   ] Egm.cs
 
