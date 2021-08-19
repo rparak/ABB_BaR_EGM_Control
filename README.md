@@ -100,10 +100,6 @@ ABB RobotStudio Project
   <img src="https://github.com/rparak/ABB_BaR_EGM_Control/blob/main/images/mv_4.png" width="800" height="450">
 </p>
 
-## Result:
-
-Youtube: ...
-
 ## Contact Info:
 Roman.Parak@outlook.com
 
