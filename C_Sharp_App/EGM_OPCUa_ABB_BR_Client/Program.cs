@@ -272,16 +272,16 @@ namespace EGM_OPCUa_ABB_BR_Client
         // ------------------------ Threading Block { EGM read/write data - main function } ------------------------//
         static void EGM_rw_thread_function(int port_adr)
         {
-            UdpClient udp_client = null;
-            // Create an udp client and listen on any address and the port {ABB Robot Port is set from the RobotStudio ABB}
-            udp_client = new UdpClient(port_adr);
+            UdpClient udp_server = null;
+            // Create an udp server and listen on any address and the port {ABB Robot Port is set from the RobotStudio ABB}
+            udp_server = new UdpClient(port_adr);
 
             var end_point = new IPEndPoint(IPAddress.Any, port_adr);
 
             while (egm_c_rw_while)
             {
                 // Get the data from the robot
-                var data = udp_client.Receive(ref end_point);
+                var data = udp_server.Receive(ref end_point);
 
                 if (data != null)
                 {
@@ -326,7 +326,7 @@ namespace EGM_OPCUa_ABB_BR_Client
                             sensor_message.WriteTo(memory_stream);
 
                             // Send message to the ABB ROBOT {UDP}
-                            int bytes_sent = udp_client.Send(memory_stream.ToArray(),(int)memory_stream.Length, end_point);
+                            int bytes_sent = udp_server.Send(memory_stream.ToArray(),(int)memory_stream.Length, end_point);
                             // Check sent data
                             if (bytes_sent < 0)
                             {
