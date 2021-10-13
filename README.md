@@ -14,7 +14,7 @@ ABB RobotStudio, B&R Automation Studio
 
 ## Project Description:
 
-The project is focused on a simple demonstration of client / server communication via OPC UA, which is implemented in C# Console App. (Server - B&R Automation PLC, Client - C# Console App). The console application communicates with the ABB robot via UDP (User Datagram Protocol) and controls the robot throught EGM (Externally Guided Motion). The application uses performance optimization using multi-threaded programming.
+The project is focused on a simple demonstration of client-server communication via OPC UA, which is implemented in C# Console App. (Server - B&R Automation PLC, Client - C# Console App). The console application communicates with the ABB robot via UDP (User Datagram Protocol) and controls the robot throught EGM (Externally Guided Motion). The application uses performance optimization using multi-threaded programming.
 
 [Application Manual](https://github.com/rparak/ABB_BaR_EGM_Control/tree/main/Documentation)
 
