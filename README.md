@@ -117,6 +117,7 @@ Roman.Parak@outlook.com
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/rparak/ABB_BaR_EGM_Control}}
 }
+```
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
